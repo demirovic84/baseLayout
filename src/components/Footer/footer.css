@@ -1,0 +1,37 @@
+
+.footer-wrapper {
+    background-color: tomato;    
+}
+
+.footer-boxes {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0 50px 0;
+}
+
+.box {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 img, .box2 img, .box3 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer-bottom {
+    border-top: 1px solid black;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.footer-bottom p{
+padding: 0;
+}
+

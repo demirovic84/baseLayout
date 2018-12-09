@@ -1,0 +1,75 @@
+/* Main css for page */
+
+h1 {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  /* font-family: 'Titillium Web', sans-serif; */
+  /* font-family: Roboto; */
+  /* font-family: 'Shadows Into Light', cursive; */
+  font-weight: 100;
+
+}
+
+p {
+  font-size: 18px;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 5s linear;
+  height: 200px;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 10vmin);
+  color: white;
+  flex-wrap: wrap;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    /* Auto adjust font-size to window */
+    font-size: calc(10px + 4vmin);
+}
+
+.main-menu {
+  align-self: flex-end;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.main-menu a > button {
+  border: none;
+  background: none;
+  color: white;
+  font-size: 20px;
+  outline: none;
+}
+
+.component-wrapper {
+  height: 100vh;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.ScrollUpButton__Container {
+  background-color: white !important;
+  outline: none;
+}
