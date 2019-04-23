@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="542px" height="204px" viewBox="0 0 542 204" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="3.65272753%" y1="44.6323303%" x2="101.999998%" y2="55.901961%" id="linearGradient-1">
+            <stop stop-color="#C86DD7" offset="0%">
+            <animate attributeName="stop-color" values="#C86DD7; #af45fc; #C86DD7" dur="1s" repeatCount="indefinite"></animate>
+            </stop>
+            <stop stop-color="#af45fc" offset="100%">
+            <animate attributeName="stop-color" values="#af45fc; #C86DD7; #af45fc" dur="1s" repeatCount="indefinite"></animate>
+            </stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-104.000000, -384.000000)" stroke="url(#linearGradient-1)" stroke-width="30">
+            <g id="LOGO-2" transform="translate(115.000000, 399.000000)">
+                <path d="M155.198203,80.2994141 L155.198203,1.45 C155.198203,0.649187113 154.512913,0 153.667566,0 L96.0653945,2.06057393e-14 C45.3445495,2.06057393e-14 4.22718053,38.9512268 4.22718053,87 C4.22718053,135.048773 45.3445495,174 96.0653945,174 L164.771036,174 C165.137462,174 165.474543,173.799591 165.649574,173.477672 L259.093064,1.61581275 C259.356876,1.13060959 259.964072,0.951135908 260.449275,1.21494707 C260.618768,1.30710262 260.757985,1.44631968 260.85014,1.61581275 L354.293631,173.477672 C354.468662,173.799591 354.805743,174 355.172169,174 L423.87781,174 C474.598655,174 515.716024,135.048773 515.716024,87 C515.716024,38.9512268 474.598655,2.06057393e-14 423.87781,2.06057393e-14 L366.275639,0 C365.430292,0 364.745002,0.649187113 364.745002,1.45 L364.745002,80.2994141" id="Path" transform="translate(259.971602, 87.000000) scale(-1, 1) translate(-259.971602, -87.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
+
+
