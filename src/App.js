@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './CAD_logo.svg';
 import './App.css';
 import About from './components/About/about';
 import Code from './components/Code/code';
@@ -17,23 +17,44 @@ import {TinyButton as ScrollUpButton} from "react-scroll-up-button"; //Add this 
 
 
 class App extends Component {
+
+  state = {
+    isTop: true,
+  };
+
+
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < 200;
+      if (isTop !== this.state.isTop) {
+          this.setState({ isTop })
+      }
+    });
+  }
+
   render() {
     return (
       
         <div className="App" id="home">
           <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <div className="title">
-            <h1>Welcome</h1>
-          </div>
-              <Router>
-                <div className="main-menu">
-                  <Link smooth to="/#home"><button>Home</button></Link>
-                  <Link smooth to="/About#about"><button>About</button></Link>
-                  <Link smooth to="/Code#code"><button>Code</button></Link>
-                  <Link smooth to="/Contact#contact"><button>Contact</button></Link>
+          
+          <Router>
+            
+                <div className={this.state.isTop ? 'main-menu' : 'main-menu main-menu-scrolled'}>
+
+                <img src={logo} className="App-logo" alt="logo" />
+
+                    <div className="links">
+                    <Link smooth to="/#home"><button>Home</button></Link>
+                    <Link smooth to="/About#about"><button>About</button></Link>
+                    <Link smooth to="/Code#code"><button>Code</button></Link>
+                    <Link smooth to="/Contact#contact"><button>Contact</button></Link>
+                    </div>
                 </div>
               </Router>
+          <div className="title">
+            <h1 className="heading">Welcome</h1>
+          </div>
           </header>
           <About />
           <Code />
@@ -53,5 +74,8 @@ class App extends Component {
     );
   }
 }
+
+
+
 
 export default App;
