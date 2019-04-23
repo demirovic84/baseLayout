@@ -7,15 +7,31 @@
     display: flex;
     justify-content: space-evenly;
     margin: 50px 0 50px 0;
+    flex-direction:column;
+    width: 100%;
 }
 
+@media only screen and (min-width: 600px) {
+    .footer-boxes {
+        flex-direction: row;
+        display:flex;
+    }
+  }
+
 .box {
-    border-radius: 50%;
-    width: 200px;
+    width: 100%;
+    padding: 10px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid white;
+}
+
+
+
+.box > p {
+    color: white;
 }
 
 .box1 img, .box2 img, .box3 img{
@@ -28,10 +44,12 @@
 .footer-bottom {
     border-top: 1px solid black;
     width: 100%;
-    padding: 10px 0 10px 0;
+    padding: 12px 0 12px 0;
+    background-image: linear-gradient(6.54deg, #D83434 0%, #C86DD7 100%);
 }
 
 .footer-bottom p{
 padding: 0;
+color: white;
 }
 
