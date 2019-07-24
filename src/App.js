@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './CAD_logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import About from './components/About/about';
 import Code from './components/Code/code';
@@ -7,7 +7,9 @@ import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
-import {TinyButton as ScrollUpButton} from "react-scroll-up-button"; //Add this line Here
+import {TinyButton as ScrollUpButton} from "react-scroll-up-button";
+import { bubble as Menu } from 'react-burger-menu'
+
 
 
 
@@ -17,44 +19,32 @@ import {TinyButton as ScrollUpButton} from "react-scroll-up-button"; //Add this 
 
 
 class App extends Component {
-
-  state = {
-    isTop: true,
-  };
-
-
-  componentDidMount() {
-    document.addEventListener('scroll', () => {
-      const isTop = window.scrollY < 200;
-      if (isTop !== this.state.isTop) {
-          this.setState({ isTop })
-      }
-    });
-  }
-
+  
   render() {
     return (
-      
+
         <div className="App" id="home">
-          <header className="App-header">
-          
-          <Router>
-            
-                <div className={this.state.isTop ? 'main-menu' : 'main-menu main-menu-scrolled'}>
-
-                <img src={logo} className="App-logo" alt="logo" />
-
-                    <div className="links">
-                    <Link smooth to="/#home"><button>Home</button></Link>
-                    <Link smooth to="/About#about"><button>About</button></Link>
-                    <Link smooth to="/Code#code"><button>Code</button></Link>
-                    <Link smooth to="/Contact#contact"><button>Contact</button></Link>
-                    </div>
+        <Menu>
+            <Router>
+                <div className="main-menu">
+                  <Link smooth to="/#home"><button>Home</button></Link>
+                  <Link smooth to="/About#about"><button>About</button></Link>
+                  <Link smooth to="/Code#code"><button>Code</button></Link>
+                  <Link smooth to="/Contact#contact"><button>Contact</button></Link>
                 </div>
               </Router>
+            </Menu>
+          <header className="App-header">
+          
+          <img src={logo} className="App-logo" alt="logo" />
           <div className="title">
-            <h1 className="heading">Welcome</h1>
+            <h1>Welcome to my starterpack in React!</h1>
+            <h1>😍</h1>
+  
+
+
           </div>
+      
           </header>
           <About />
           <Code />
@@ -74,8 +64,5 @@ class App extends Component {
     );
   }
 }
-
-
-
 
 export default App;
